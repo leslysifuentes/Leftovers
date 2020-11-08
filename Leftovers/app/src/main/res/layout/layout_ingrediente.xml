@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF5EC"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_ingrediente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:text="Ingrediente"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#5C1D05"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_agregado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:text="No agregado"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#6E3C2A"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/b_agregar_ing"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/agregar" />
+
+</LinearLayout>
