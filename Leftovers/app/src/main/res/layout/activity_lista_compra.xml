@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".ListaCompra">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/diseno4"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="Lista de Compras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="#FFF5EC"
+            android:textSize="30sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_agregar_compra"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="2"
+                android:background="@drawable/diseno"
+                android:ems="10"
+                android:hint="Agregar"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColorHint="#C65C1D05"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/b_agregar_compra"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/add" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lista_compras"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+    </ListView>
+</LinearLayout>
